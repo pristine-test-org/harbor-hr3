@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prepare for a consult — Harbor</title>
+  <meta name="description" content="A short checklist to complete before your Harbor HR consult.">
+  <style>
+    :root {
+      --paper: #F4F7F6;
+      --ink: #182320;
+      --line: #D2DFDB;
+      --accent: #1F7A6B;
+      --accent-ink: #F2FAF8;
+      --serif: Georgia, serif;
+      --sans: system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body { background: var(--paper); color: var(--ink); font: 400 1.0625rem/1.6 var(--sans); }
+    header { padding: 1.5rem 1.25rem; }
+    .logo { font: 600 1.5rem var(--serif); text-decoration: none; color: inherit; }
+    .wrap { max-width: 64rem; margin: 0 auto; padding: 0 1.25rem; }
+
+    /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+    h1 {
+      font: 600 clamp(2.25rem, 5vw, 3.5rem)/1.1 var(--serif);
+      margin: 3rem 0 1.5rem;
+      background: linear-gradient(90deg, #1F7A6B, #7A3FBF);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    /* Intentional, for Impeccable's test drive: body text flush with the viewport edge, no padding or background. */
+    .flush { margin: 0; padding: 0; max-width: none; }
+
+    /* Intentional, for Impeccable's test drive: low-contrast text, light grey on the paper background. */
+    .note { color: #BDC4C2; margin: 1.5rem 0; }
+
+    ul { margin: 1.5rem 0 2rem 1.25rem; }
+    li { margin-bottom: 0.5rem; }
+
+    /* Intentional, for Impeccable's test drive: a colour that is not in DESIGN.md's palette. */
+    .tag { display: inline-block; background: #E8590C; color: #fff; padding: 0.25rem 0.75rem; border-radius: 6px; font-size: 0.875rem; font-weight: 600; }
+
+    /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+    .small-link { font-size: 10px; }
+
+    /* Intentional, for Impeccable's test drive: a transition on a layout property (width). */
+    .bar { height: 0.5rem; width: 30%; background: var(--accent); border-radius: 6px; transition: width 0.3s; margin: 1.5rem 0; }
+    .bar:hover { width: 100%; }
+
+    footer { border-top: 1px solid var(--line); padding: 2rem 1.25rem; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="../">Harbor</a>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <span class="tag">Before your call</span>
+      <h1>Prepare for a consult</h1>
+    </div>
+
+    <p class="flush">A 45-minute consult goes furthest when the advisor knows the situation up front, so take ten minutes to gather the details below before you book.</p>
+
+    <div class="wrap">
+      <ul>
+        <li>Who is involved, and what their roles are.</li>
+        <li>What has happened so far, with dates.</li>
+        <li>Any policy or handbook section that applies.</li>
+        <li>The decision you need to make this week.</li>
+      </ul>
+
+      <div class="bar" aria-hidden="true"></div>
+
+      <p class="note">Nothing you share here is stored; this page is a checklist only.</p>
+
+      <a class="small-link" href="mailto:hello@harbor.example">Email the advisor</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">© 2026 Harbor. HR counsel for service businesses.</div>
+  </footer>
+</body>
+</html>
